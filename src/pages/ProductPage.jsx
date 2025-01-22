@@ -14,6 +14,7 @@ const defaultModalState = {
   imageUrl: "",
   title: "",
   category: "",
+  series: "",
   unit: "",
   origin_price: "",
   price: "",

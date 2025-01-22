@@ -262,7 +262,7 @@ function ProductModal({
               <div className="col-md-8">
                 <div className="mb-3">
                   <label htmlFor="title" className="form-label">
-                    標題
+                    品名
                   </label>
                   <input
                     value={modalData.title}
@@ -271,24 +271,42 @@ function ProductModal({
                     id="title"
                     type="text"
                     className="form-control"
-                    placeholder="請輸入標題"
+                    placeholder="請輸入品名"
                   />
                 </div>
 
-                <div className="mb-3">
-                  <label htmlFor="category" className="form-label">
-                    分類
-                  </label>
-                  <input
-                    value={modalData.category}
-                    onChange={handleModalInputChange}
-                    name="category"
-                    id="category"
-                    type="text"
-                    className="form-control"
-                    placeholder="請輸入分類"
-                  />
+                <div className="row g-3 mb-3">
+                  <div className="col-6">
+                    <label htmlFor="category" className="form-label">
+                      類別
+                    </label>
+                    <input
+                      value={modalData.category}
+                      onChange={handleModalInputChange}
+                      name="category"
+                      id="category"
+                      type="text"
+                      className="form-control"
+                      placeholder="請輸入類別"
+                    />
+                  </div> 
+                  <div className="col-6">
+                    <label htmlFor="series"
+                    className="form-label">
+                      系列
+                    </label>
+                    <input
+                      value={modalData.series}
+                      onChange={handleModalInputChange}
+                      name="series"
+                      id="series"
+                      type="text"
+                      className="form-control"
+                      placeholder="請輸入系列"
+                    />
+                  </div>
                 </div>
+                
 
                 <div className="mb-3">
                   <label htmlFor="unit" className="form-label">
